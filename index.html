@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body onload="onLoad()">
+    <div class="reg-area">
+        <div class="title">
+            <h1 id="title-text">Join Upay</h1>
+    <p id="detail" class="detail">We are glad to see your interest towards helping children from underprivileged and marginalized sections of the society. Kindly provide more details about you.</p>
+        </div>
+        <div class="reg-form">
+                
+            <form id="regForm" method="POST">
+                    
+                <div class="form-elem">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-elem">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-elem">
+                    <label for="mobile">Mobile</label>
+                    <input type="tel" name="mobile" required>
+                </div>
+                <div class="form-elem">
+                    <label for="qualification">Qualification and Profession</label>
+                    <input type="text" name="qualification" required >
+                </div>
+                <div class="form-elem">
+                    <label for="cityName">City</label>
+                    <select name="cityName" required>
+                        <option value="" disabled selected></option>
+                        <option value="Pune">Pune</option>
+                        <option value="Mouda">Mouda</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="New Delhi">New Delhi</option>
+                        <option value="Gurgaon">Gurgaon</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Noida">Noida</option>
+                    </select> 
+                </div>
+                <div id="contri" class="form-elem">
+                            <b>How do you wish to contribute <span style="color: red"> *</span></b>
+                            <div>
+                                <input type="checkbox" id="teaching" name="contributionMethod" value="teaching">
+                                <label for="teaching" style="font-weight: 100">Teaching</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="accounting" name="contributionMethod" value="accounting/finance">
+                                <label for="accounting" style="font-weight: 100">Accounting/Finance</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="fundraising" name="contributionMethod" value="fundraising/pr/csr">
+                                <label for="fundraising" style="font-weight: 100">Fund Raising/PR/CSR</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="operations" name="contributionMethod" value="operations">
+                                <label for="operations" style="font-weight: 100">Operations/Organising Events</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="tech" name="contributionMethod" value="design/tech">
+                                <label for="tech" style="font-weight: 100">Design/Tech</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="donation" name="contributionMethod" value="monthly donation">
+                                <label for="donation" style="font-weight: 100">Monthly donation/Kind donation</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="other" name="contributionMethod" value="other">
+                                <label for="other" style="font-weight: 100">Other</label>
+                            </div>
+                </div>
+                <div class="form-elem">
+                    <label for="whyUpay">Why do you want to join Upay (Include how did you know about upay)</label>
+                    <textarea name="whyUpay" id="whyUpay" rows="3" required></textarea>
+                </div>
+                <div class="form-elem">
+                    <label for="experienced">Do you have any previous experience in social work, teaching, etc</label>
+                    <select name="experienced" id="experienced" required>
+                        <option value="" disabled selected></option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="form-elem">
+                    <input type="submit" value="Submit" id="submit-btn"/>
+                </div>
+            </form>
+        </div>
+        
+        <footer>
+                <a href="https://www.freepik.com/free-photos-vectors/Background">Background vector created by rawpixel.com - www.freepik.com</a>
+        </footer>
+    </div>
+
+    
+   
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
